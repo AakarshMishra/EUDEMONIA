@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.Eudemonia">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Eudemonia"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Proejct124">
+        <activity
+            android:name=".Activity.MainActivityAiCouncellor"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".OpenSplash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.Councellors"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Emotional"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Catastrophizing"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Blamer"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MentalFiltoring"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CouncellorOpen"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Councellor"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.splash2"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SplashScreen"
+            android:theme="@style/SplashScreen"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.setting"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.chatwindo"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MainActivityMessenger"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.splash"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

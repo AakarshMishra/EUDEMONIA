@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Councellor">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="1dp"
+        android:layout_marginVertical="1dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/purple"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Find your desired councellor:"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="32dp"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Can you identify any one of the distortions in your thought?"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:textSize="18dp"
+                android:layout_marginVertical="10dp"
+                android:textColor="#000"
+                android:layout_height="wrap_content"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardElevation="20dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingHorizontal="25dp"
+                            android:paddingVertical="15dp"
+                            android:background="@drawable/card1_style"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/mental"
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/heart"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Mental\nFiltering"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textSize="20dp"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#000"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardElevation="20dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingHorizontal="25dp"
+                            android:paddingVertical="15dp"
+                            android:background="@drawable/card2_style"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/catas"
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/catas"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Catastro\nphizing"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textSize="20dp"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#000"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardElevation="20dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingHorizontal="25dp"
+                            android:paddingVertical="15dp"
+                            android:background="@drawable/card1_style"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/blamer"
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/blamer"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Blaming\n"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textSize="20dp"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#000"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardElevation="20dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingHorizontal="25dp"
+                            android:paddingVertical="15dp"
+                            android:background="@drawable/card2_style"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/emotional"
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/emotional"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Emotional\nReasoning"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textSize="20dp"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#000"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Description of distortions:"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="882dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="206dp"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="223dp"
+                        android:background="#00D0B7B7"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="20dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="115dp"
+                            android:src="@drawable/heart" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="Mental Filtering"
+                                android:textColor="#000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="Mental filtering occurs when people struggle to see the whole picture and can only focus on the negative."
+                                android:textColor="#000"
+                                android:textSize="20dp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="206dp"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="216dp"
+                        android:background="#00D0B7B7"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="20dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="115dp"
+                            android:src="@drawable/catas" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="Catastrophizing"
+                                android:textColor="#000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="Catastrophizing means that a person fixates on the worst possible outcome and treats it as likely, even when it is not. "
+                                android:textColor="#000"
+                                android:textSize="20dp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="206dp"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="225dp"
+                        android:background="#00D0B7B7"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="20dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="115dp"
+                            android:src="@drawable/blamer" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="Blaming"
+                                android:textColor="#000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="96dp"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="It causes a person to wrongly assign the responsibility of a negative outcome either to oneself or another."
+                                android:textColor="#000"
+                                android:textSize="20dp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="215dp"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="222dp"
+                        android:background="#00D0B7B7"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="20dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="115dp"
+                            android:src="@drawable/emotional" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="Emotional Reasoning"
+                                android:textColor="#000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="Inaccurately evaluating yourself and your circumstances, including people with whom you interact."
+                                android:textColor="#000"
+                                android:textSize="20dp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:id="@+id/navigationview"
+        android:background="#9C27B0"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        android:layout_gravity="start"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/header_layout"
+        />
+</androidx.drawerlayout.widget.DrawerLayout>
